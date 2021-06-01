@@ -1,0 +1,14 @@
+<!-- Now lets learn about Template Inheritance
+This page will be the base/parent html from which other children inherit from -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{% block titlename %}{% endblock %}</title> <!-- We can give what info must come inside blocks in child html pages -->
+</head>
+<body>
+	<h1>{% block heading %}{% endblock %}</h1>
+	<p>Welcome to the Home Page</p>
+	{% block para %}{% endblock %}
+</body>
+</html>
